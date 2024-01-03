@@ -73,6 +73,14 @@ function selectTile() {
     else if (this == currPlantTile) {
         document.getElementById("score").innerText = "GAME OVER: " + score.toString(); //update score html
         gameOver = true;
-        
+        updateScore(Math.floor(score / 250));
     }
 }
+
+        function updateScore(amt) {
+            // Assuming the game updates the score and wants to notify the parent
+            const newScore = amt; // Replace this with the actual updated score
+
+            // Send a message to the parent page
+            window.parent.postMessage({ score: newScore }, 'https://hussienk.github.io');
+        }
