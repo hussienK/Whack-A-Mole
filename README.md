@@ -1,0 +1,2 @@
+- This is a little minigame built using HTML/CSS/Javascript.    
+- It's a part of the bigger website Pixearn: https://hussienk.github.io/PixEarn/
